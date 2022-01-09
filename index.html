@@ -10,11 +10,11 @@
   </head>
   <body>
     <header>
-      <h1></h1>
-      <p></p>
+      <h1>Play Tic, Tac, Toe</h1>
+      <p>Built with HTML, CSS, JavaScript and - of course - lots of love!</p>
     </header>
     <main>
-<!-- 
+      <!-- 
         <section id="modals">
           <div id="modal-set-player-name">
               <h2>Choose your name</h2>
@@ -26,16 +26,25 @@
       </section> 
 -->
       <section id="players-blocks">
-        <div id="player-1-block"></div>
-        <p>Player 1</p>
-        <h2 id="player-1-name"></h2>
-        <p id="player-1-team"></p>
-        <a href="">Edit</a>
-
-        <div id="player-2-block"></div>
-        <button>Start New Game</button>
+        <ul>
+          <li id="player-1-block" class="player-block">
+            <p>Player 1</p>
+            <h2 id="player-1-name">Player1</h2>
+            <h3 id="player-1-team">X</h3>
+            <a href="">Edit</a>
+          </li>
+          <li id="player-2-block" class="player-block">
+            <p>Player 2</p>
+            <h2 id="player-2-name">Player2</h2>
+            <h3 id="player-2-team">O</h3>
+            <a href="">Edit</a>
+          </li>
+        </ul>
+        <div id="button-container">
+          <button>Start New Game</button>
+        </div>
       </section>
-<!-- 
+      <!-- 
       <section id="result">
           <div id="result-board">
               <h2>You won, <span id="winner-name"></span>!</h2>
@@ -44,7 +53,18 @@
       </section>
 -->
       <section id="game-space">
-          <p>It's your turn <span id=""></span></p>
+        <p>It's your turn <span id="name-players-turn">PlayerX</span></p>
+        <ul id="game-board">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </section>
     </main>
   </body>

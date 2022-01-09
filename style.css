@@ -1,0 +1,107 @@
+html {
+    --color-grey-100: rgb(236, 236, 236);
+    --color-grey-400: rgb(139, 139, 139);
+    --color-grey-900: rgb(41, 41, 41);
+    
+    --color-main-100: rgb(252, 236, 199);
+    --color-main-400: rgb(253, 226, 156);
+    --color-main-500: rgb(255, 195, 44);
+    --color-main-700: rgb(255, 183, 0);
+    --color-main-900: rgb(49, 35, 0);
+    
+    --size-1: 18px;
+    --size-5: 50px;
+    }
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 4rem;
+    text-align: center;
+    background-color: var(--color-main-700);
+    color: white;
+}
+
+h1 {
+    margin: 0;  
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 0.9rem;
+}
+
+
+/* Players Blocks */
+#players-blocks ul{
+    padding: 0;
+    display: flex;
+    list-style: none;
+    width: 600px;
+    /* background-color: green; */
+    margin: 1rem auto;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+li.player-block{
+    background-color: var(--color-main-100);
+    width: 200px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.player-block p{
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-grey-900)
+}
+
+.player-block h2{
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--color-main-700)
+}
+
+.player-block h3{
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+    color: var(--color-main-900)
+}
+
+.player-block a{
+    text-decoration: none;
+    color: var(--color-main-500);
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    margin: 0.5rem;
+    border-radius: 6px;
+}
+.player-block a:hover {
+    background-color: var(--color-main-400);
+    color: var(--color-main-700);
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;    
+}
+
+#players-blocks button {
+    font:inherit;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    background-color: var(--color-main-700);
+    color: var(--color-grey-900);
+
+}
+
+#players-blocks button:hover {
+    background-color: var(--color-main-100);
+}
