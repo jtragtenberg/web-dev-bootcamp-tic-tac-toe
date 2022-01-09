@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Jogo da Velha</title>
     <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
@@ -14,57 +15,66 @@
       <p>Built with HTML, CSS, JavaScript and - of course - lots of love!</p>
     </header>
     <main>
-      <!-- 
-        <section id="modals">
-          <div id="modal-set-player-name">
-              <h2>Choose your name</h2>
-              <p>Player Name</p>
-              <input type="text" name="player-name" id="">
-              <button>Cancel</button>
-              <button>Confirm</button>
-          </div>
-      </section> 
--->
-      <section id="players-blocks">
-        <ul>
+      <section id="modals">
+        <aside id="modal-set-player-name">
+          <h2>Choose your name</h2>
+          <p>Player Name</p>
+          <form>
+            <div>
+              <label for="playername">Player Name</label>
+              <input type="text" name="playername" id="playername" />
+            </div>
+            <div>
+              <button type="button">Cancel</button>
+              <button type="submit">Confirm</button>
+            </div>
+          </form>
+        </aside>
+      </section>
+
+      <section id="game-configuration">
+        <ol>
           <li id="player-1-block" class="player-block">
-            <p>Player 1</p>
-            <h2 id="player-1-name">Player1</h2>
-            <h3 id="player-1-team">X</h3>
-            <a href="">Edit</a>
+            <article>
+              <h2>Player 1</h2>
+              <h3 id="player-1-name">Player Name</h3>
+              <p id="player-1-team">X</p>
+              <a href="">Edit</a>
+            </article>
           </li>
           <li id="player-2-block" class="player-block">
-            <p>Player 2</p>
-            <h2 id="player-2-name">Player2</h2>
-            <h3 id="player-2-team">O</h3>
-            <a href="">Edit</a>
+            <article>
+              <h2>Player 2</h2>
+              <h3 id="player-2-name">Player2</h3>
+              <p id="player-2-team">O</p>
+              <a href="">Edit</a>
+            </article>
           </li>
-        </ul>
+        </ol>
         <div id="button-container">
           <button>Start New Game</button>
         </div>
       </section>
-      <!-- 
-      <section id="result">
-          <div id="result-board">
-              <h2>You won, <span id="winner-name"></span>!</h2>
-              <p>Click "Start New Game" above to start a new game!</p>
-          </div>
-      </section>
--->
-      <section id="game-space">
-        <p>It's your turn <span id="name-players-turn">PlayerX</span></p>
-        <ul id="game-board">
+      
+      <section id="active-game">
+        <article id="result-board">
+          <h2>You won, <span id="winner-name">PLAYER X NAME</span>!</h2>
+          <p>Click "Start New Game" above, to start a new game!</p>
+        </article>
+        <p>It's your turn <span id="active-player-name">Player X Name</span></p>
+        <ol id="game-board">
           <li></li>
           <li></li>
           <li></li>
+
           <li></li>
           <li></li>
           <li></li>
+
           <li></li>
           <li></li>
           <li></li>
-        </ul>
+        </ol>
       </section>
     </main>
   </body>

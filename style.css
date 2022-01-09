@@ -38,7 +38,7 @@ header p {
 
 
 /* Players Blocks */
-#players-blocks ul{
+#game-configuration ol{
     padding: 0;
     display: flex;
     list-style: none;
@@ -56,19 +56,19 @@ li.player-block{
     text-align: center;
 }
 
-.player-block p{
+.player-block h2{
     font-size: 0.8rem;
     margin-bottom: 0.4rem;
     color: var(--color-grey-900)
 }
 
-.player-block h2{
+.player-block h3{
     margin: 0;
     font-size: 1.3rem;
     color: var(--color-main-700)
 }
 
-.player-block h3{
+.player-block p{
     margin: 0.5rem 0;
     font-size: 1.3rem;
     color: var(--color-main-900)
@@ -92,7 +92,7 @@ li.player-block{
     justify-content: center;    
 }
 
-#players-blocks button {
+#game-configuration button {
     font:inherit;
     padding: 0.5rem 1.5rem;
     border: 2px solid transparent;
@@ -102,6 +102,6 @@ li.player-block{
 
 }
 
-#players-blocks button:hover {
+#game-configuration button:hover {
     background-color: var(--color-main-100);
 }
