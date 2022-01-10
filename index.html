@@ -4,29 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
     <title>Jogo da Velha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="overlays.css" />
+    <link rel="stylesheet" href="configuration.css" />
     <script src="app.js"></script>
   </head>
   <body>
-    <header>
+    <div id="backdrop"></div>
+    <header id="main-header">
       <h1>Play Tic, Tac, Toe</h1>
       <p>Built with HTML, CSS, JavaScript and - of course - lots of love!</p>
     </header>
     <main>
       <section id="modals">
-        <aside id="modal-set-player-name">
+        <aside class="modal" id="config-overlay">
           <h2>Choose your name</h2>
           <p>Player Name</p>
           <form>
-            <div>
+            <div class="form-control">
               <label for="playername">Player Name</label>
               <input type="text" name="playername" id="playername" />
             </div>
             <div>
-              <button type="button">Cancel</button>
-              <button type="submit">Confirm</button>
+              <button type="button" class="btn btn-alt">Cancel</button>
+              <button type="submit" class="btn">Confirm</button>
             </div>
           </form>
         </aside>
@@ -39,7 +47,7 @@
               <h2>Player 1</h2>
               <h3 id="player-1-name">Player Name</h3>
               <p id="player-1-team">X</p>
-              <a href="">Edit</a>
+              <button class="btn btn-alt">Edit</button>
             </article>
           </li>
           <li id="player-2-block" class="player-block">
@@ -47,15 +55,15 @@
               <h2>Player 2</h2>
               <h3 id="player-2-name">Player2</h3>
               <p id="player-2-team">O</p>
-              <a href="">Edit</a>
+              <button class="btn btn-alt">Edit</button>
             </article>
           </li>
         </ol>
         <div id="button-container">
-          <button>Start New Game</button>
+          <button class="btn">Start New Game</button>
         </div>
       </section>
-      
+
       <section id="active-game">
         <article id="result-board">
           <h2>You won, <span id="winner-name">PLAYER X NAME</span>!</h2>

@@ -1,8 +1,9 @@
 html {
-    --color-grey-100: rgb(236, 236, 236);
+    --color-grey-100: rgb(250, 250, 250);
     --color-grey-400: rgb(139, 139, 139);
     --color-grey-900: rgb(41, 41, 41);
     
+    --color-main-50: rgb(253, 250, 242);
     --color-main-100: rgb(252, 236, 199);
     --color-main-400: rgb(253, 226, 156);
     --color-main-500: rgb(255, 195, 44);
@@ -14,14 +15,17 @@ html {
     }
 
 body {
-    font-family: sans-serif;
+    font-family: "Open-Sans", sans-serif;
+    color: var(--color-grey-900);
+    background-color: var(--color-main-50);
+
     margin: 0;
     padding: 0;
 }
 
-header {
+#main-header {
     margin: 0;
-    padding: 4rem;
+    padding: 4rem 5%;
     text-align: center;
     background-color: var(--color-main-700);
     color: white;
@@ -37,13 +41,12 @@ header p {
 }
 
 
-/* Players Blocks */
+
 #game-configuration ol{
     padding: 0;
     display: flex;
     list-style: none;
     width: 600px;
-    /* background-color: green; */
     margin: 1rem auto;
     margin-bottom: 10px;
     justify-content: center;
@@ -82,17 +85,17 @@ li.player-block{
     margin: 0.5rem;
     border-radius: 6px;
 }
-.player-block a:hover {
+/* .player-block button:hover {
     background-color: var(--color-main-400);
     color: var(--color-main-700);
-}
+} */
 
 #button-container {
     display: flex;
     justify-content: center;    
 }
 
-#game-configuration button {
+/* #game-configuration button {
     font:inherit;
     padding: 0.5rem 1.5rem;
     border: 2px solid transparent;
@@ -104,4 +107,31 @@ li.player-block{
 
 #game-configuration button:hover {
     background-color: var(--color-main-100);
+} */
+
+.btn {
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--color-main-700);
+    border: 1px solid var(--color-main-700);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-alt {
+    font: inherit;
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--color-main-700);
+}
+
+.btn:hover{
+    background-color: var(--color-main-900);
+    border-color: var(--color-main-900)
+}
+
+.btn-alt:hover {
+    background-color: var(--color-main-400);
+    border-color: transparent;
 }
