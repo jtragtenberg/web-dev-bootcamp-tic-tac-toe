@@ -85,38 +85,6 @@ header p {
   color: var(--color-main-900);
 }
 
-.player-block a {
-  text-decoration: none;
-  color: var(--color-main-500);
-  padding: 0.5rem 1.5rem;
-  display: inline-block;
-  margin: 0.5rem;
-  border-radius: 6px;
-}
-/* .player-block button:hover {
-    background-color: var(--color-main-400);
-    color: var(--color-main-700);
-} */
-
-#button-container {
-  display: flex;
-  justify-content: center;
-}
-
-/* #game-configuration button {
-    font:inherit;
-    padding: 0.5rem 1.5rem;
-    border: 2px solid transparent;
-    border-radius: 6px;
-    background-color: var(--color-main-700);
-    color: var(--color-grey-900);
-
-}
-
-#game-configuration button:hover {
-    background-color: var(--color-main-100);
-} */
-
 .btn {
   font: inherit;
   padding: 0.5rem 1.5rem;
