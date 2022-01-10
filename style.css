@@ -103,8 +103,8 @@ header p {
 }
 
 .btn:hover {
-  background-color: var(--color-main-900);
-  border-color: var(--color-main-900);
+  background-color: var(--color-main-500);
+  border-color: var(--color-main-500);
 }
 
 .btn-alt:hover {
