@@ -1,89 +1,97 @@
 html {
-    --color-grey-100: rgb(250, 250, 250);
-    --color-grey-400: rgb(139, 139, 139);
-    --color-grey-900: rgb(41, 41, 41);
-    
-    --color-main-50: rgb(253, 250, 242);
-    --color-main-100: rgb(252, 236, 199);
-    --color-main-400: rgb(253, 226, 156);
-    --color-main-500: rgb(255, 195, 44);
-    --color-main-700: rgb(255, 183, 0);
-    --color-main-900: rgb(49, 35, 0);
-    
-    --size-1: 18px;
-    --size-5: 50px;
-    }
+  --color-grey-100: rgb(250, 250, 250);
+  --color-grey-400: rgb(139, 139, 139);
+  --color-grey-900: rgb(41, 41, 41);
+
+  --color-main-50: rgb(253, 250, 242);
+  --color-main-100: rgb(252, 236, 199);
+  --color-main-400: rgb(253, 226, 156);
+  --color-main-500: rgb(255, 195, 44);
+  --color-main-700: rgb(255, 183, 0);
+  --color-main-900: rgb(49, 35, 0);
+
+  --size-1: 18px;
+  --size-5: 50px;
+}
 
 body {
-    font-family: "Open-Sans", sans-serif;
-    color: var(--color-grey-900);
-    background-color: var(--color-main-50);
+  font-family: "Open-Sans", sans-serif;
+  color: var(--color-grey-900);
+  background-color: var(--color-main-50);
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #main-header {
-    margin: 0;
-    padding: 4rem 5%;
-    text-align: center;
-    background-color: var(--color-main-700);
-    color: white;
+  margin: 0;
+  padding: 4rem 5%;
+  text-align: center;
+  background-color: var(--color-main-700);
+  color: white;
 }
 
 h1 {
-    margin: 0;  
-    font-size: 3rem;
+  margin: 0;
+  font-size: 3rem;
 }
 
 header p {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
-
-
-#game-configuration ol{
-    padding: 0;
-    display: flex;
-    list-style: none;
-    width: 600px;
-    margin: 1rem auto;
-    margin-bottom: 10px;
-    justify-content: center;
+#game-configuration {
+  width: 90%;
+  max-width: 40rem;
+  margin: 3rem auto;
+  text-align: center;
 }
 
-li.player-block{
-    background-color: var(--color-main-100);
-    width: 200px;
-    margin: 0 10px;
-    text-align: center;
+#game-configuration ol {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  margin-bottom: 10px;
+  justify-content: center;
 }
 
-.player-block h2{
-    font-size: 0.8rem;
-    margin-bottom: 0.4rem;
-    color: var(--color-grey-900)
+#game-configuration li {
+  background-color: var(--color-main-100);
+  width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
-.player-block h3{
-    margin: 0;
-    font-size: 1.3rem;
-    color: var(--color-main-700)
+#game-configuration h2 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: var(--color-grey-900);
 }
 
-.player-block p{
-    margin: 0.5rem 0;
-    font-size: 1.3rem;
-    color: var(--color-main-900)
+#game-configuration h3 {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--color-main-700);
 }
 
-.player-block a{
-    text-decoration: none;
-    color: var(--color-main-500);
-    padding: 0.5rem 1.5rem;
-    display: inline-block;
-    margin: 0.5rem;
-    border-radius: 6px;
+.player-symbol {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-main-900);
+}
+
+.player-block a {
+  text-decoration: none;
+  color: var(--color-main-500);
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  margin: 0.5rem;
+  border-radius: 6px;
 }
 /* .player-block button:hover {
     background-color: var(--color-main-400);
@@ -91,8 +99,8 @@ li.player-block{
 } */
 
 #button-container {
-    display: flex;
-    justify-content: center;    
+  display: flex;
+  justify-content: center;
 }
 
 /* #game-configuration button {
@@ -110,28 +118,28 @@ li.player-block{
 } */
 
 .btn {
-    font: inherit;
-    padding: 0.5rem 1.5rem;
-    background-color: var(--color-main-700);
-    border: 1px solid var(--color-main-700);
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--color-main-700);
+  border: 1px solid var(--color-main-700);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .btn-alt {
-    font: inherit;
-    background-color: transparent;
-    border-color: transparent;
-    color: var(--color-main-700);
+  font: inherit;
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-main-700);
 }
 
-.btn:hover{
-    background-color: var(--color-main-900);
-    border-color: var(--color-main-900)
+.btn:hover {
+  background-color: var(--color-main-900);
+  border-color: var(--color-main-900);
 }
 
 .btn-alt:hover {
-    background-color: var(--color-main-400);
-    border-color: transparent;
+  background-color: var(--color-main-400);
+  border-color: transparent;
 }
