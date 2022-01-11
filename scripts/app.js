@@ -1,5 +1,14 @@
-//Configure Player Names -> Form with input field in modeal overlay; also validate user input and show validation feedback
-//(Re)Start Game -> "Start Game" button should clear current game board or "Game Over" message
-//Turn-based Gameplay -> Turns should switch automatically between the two players, every player has his/her own symbol
-//Select Fields & Check for winner -> Game fields are clickable & the player's symbol is displayed: Check for winner (regular Tic-Tac-Toe rules) after every turn
-//Show "Game Over" Window -> Persent "Game Over" message which highlights winner (or draw) once the game ends.
+//initialize html elements
+const playerConfigOverlayElement = document.getElementById("config-overlay"); //o config.js é chamado antes no HTML, mas esse objeto só é chamado com add event listener deste app.js, então esse objeto deve ser declarado antes do listener
+const backdropElement = document.getElementById("backdrop");
+
+const editPlayer1BtnElement = document.getElementById("edit-player-1-btn");
+const editPlayer2BtnElement = document.getElementById("edit-player-2-btn");
+
+const cancelConfigButtonElement = document.getElementById("cancel-config-btn");
+
+editPlayer1BtnElement.addEventListener("click", openPlayerConfig); //openPlayerConfig() defined in config.js
+editPlayer2BtnElement.addEventListener("click", openPlayerConfig); //openPlayerConfig() defined in config.js
+
+cancelConfigButtonElement.addEventListener("click", closePlayerConfig);
+backdropElement.addEventListener("click", closePlayerConfig);
