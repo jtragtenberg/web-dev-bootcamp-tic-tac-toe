@@ -11,11 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="overlays.css" />
-    <link rel="stylesheet" href="configuration.css" />
-    <link rel="stylesheet" href="game.css">
-    <script src="app.js"></script>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/overlays.css" />
+    <link rel="stylesheet" href="/styles/configuration.css" />
+    <link rel="stylesheet" href="/styles/game.css">
+    <script src="/scripts/app.js"></script>
   </head>
   <body>
     <div id="backdrop"></div>
@@ -48,7 +48,7 @@
               <h2>Player 1</h2>
               <h3 id="player-1-name">Player Name</h3>
               <p class="player-symbol">X</p>
-              <button class="btn btn-alt">Edit</button>
+              <button class="btn btn-alt" id="edit-player-1-btn">Edit</button>
             </article>
           </li>
           <li id="player-2-block" class="player-block">
@@ -56,7 +56,7 @@
               <h2>Player 2</h2>
               <h3 id="player-2-name">Player2</h3>
               <p class="player-symbol">O</p>
-              <button class="btn btn-alt">Edit</button>
+              <button class="btn btn-alt" id="edit-player-2-btn">Edit</button>
             </article>
           </li>
         </ol>
