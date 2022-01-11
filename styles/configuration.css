@@ -21,3 +21,13 @@
   border: 1px solid var(--color-grey-900);
   padding: 0.35rem;
 }
+
+.error label {
+  color: rgb(136, 2, 2);
+}
+
+.error {
+  border-color: rgb(136, 2, 2);
+  color: rgb(136, 2, 2);
+  background-color: rgb(253, 219, 219);
+}
