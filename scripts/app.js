@@ -8,16 +8,17 @@ let editedPlayer = 0;
 
 const players = [
     {
-        name: "",
+        name: "PLAYER1",
         symbol: "X"
     },
     {
-        name: "",
+        name: "PLAYER2",
         symbol: "O"
     }
 ];
 let activePlayer = 0;
 let currentRound = 1;
+let gameIsOver = false;
 
 const playerConfigOverlayElement = document.getElementById("config-overlay"); //o config.js é chamado antes no HTML, mas esse objeto só é chamado com add event listener deste app.js, então esse objeto deve ser declarado antes do listener
 const backdropElement = document.getElementById("backdrop");
@@ -25,6 +26,7 @@ const formElement = document.querySelector("form");
 const errorsOutputElement = document.getElementById("config-errors");
 const gameAreaElement = document.getElementById("active-game");
 const activePlayerNameElement = document.getElementById("active-player-name");
+const gameOverElement = document.getElementById("game-over");
 
 const editPlayer1BtnElement = document.getElementById("edit-player-1-btn");
 const editPlayer2BtnElement = document.getElementById("edit-player-2-btn");
