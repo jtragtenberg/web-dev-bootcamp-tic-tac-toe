@@ -5,6 +5,7 @@ const gameData = [
 ];
 
 let editedPlayer = 0;
+
 const players = [
     {
         name: "",
@@ -16,6 +17,7 @@ const players = [
     }
 ];
 let activePlayer = 0;
+let currentRound = 1;
 
 const playerConfigOverlayElement = document.getElementById("config-overlay"); //o config.js é chamado antes no HTML, mas esse objeto só é chamado com add event listener deste app.js, então esse objeto deve ser declarado antes do listener
 const backdropElement = document.getElementById("backdrop");
